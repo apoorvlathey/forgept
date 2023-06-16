@@ -4,7 +4,6 @@
   --border: 2px solid #ddd;
   --left-msg-bg: #ececec;
   --right-msg-bg: #579ffb;
-
 }
 
 html {
@@ -44,11 +43,15 @@ body {
 
 .msger-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
   border-bottom: var(--border);
   background: #eee;
   color: #666;
+}
+
+.msger-header-title {
+  font-weight: bolder;
 }
 
 .msger-chat {
@@ -110,11 +113,11 @@ body {
 @keyframes skeleton-loading {
   0% {
     background-color: hsl(200, 20%, 80%);
-    color: #666
+    color: #666;
   }
   100% {
     background-color: hsl(200, 20%, 95%);
-    color: #666
+    color: #666;
   }
 }
 
@@ -122,7 +125,6 @@ body {
   border-bottom-left-radius: 0;
   animation: skeleton-loading 1s linear infinite alternate;
 }
-
 
 .right-msg {
   flex-direction: row-reverse;

@@ -87,8 +87,7 @@ def answer_question(
         question,
         df,
         max_len=max_len,
-        size=size,
-        debug=false,
+        size=size
     )
     # If debug, print the raw model response
     if debug:

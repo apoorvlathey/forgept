@@ -35,8 +35,8 @@ ENV OPENAI_API_KEY="your_api_key_here"
 # Expose port 8000 for the Flask application to run on
 EXPOSE 80
 
-# Create a volume for Gunicorn logs
-VOLUME /var/log/
+# # Create a volume for Gunicorn logs
+# VOLUME /var/log/
 
 # Run the Flask app with Gunicorn
 CMD ["gunicorn", "--config", "gunicorn_config_docker.py", "web:app"]
